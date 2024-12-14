@@ -1,0 +1,30 @@
+:root{
+    --color-1: #090B12;
+    --color-2: #000000;
+    --color-3: #141922;
+    --color-4: #282828;
+    --color-5: #797B81;
+}
+
+body {
+    background-color: var(--color-3);
+}
+
+.layout-top{
+    height: 90vh;
+    border: 3px solid lightgreen;
+    display: flex;
+}
+
+.layout__sidebar {
+    flex-grow: 1;
+}
+
+.layout__main {
+    flex-basis: 90%;
+}
+
+.layout-bottom {
+    height: 10vh;
+    border: 3px solid lightpink;
+}
