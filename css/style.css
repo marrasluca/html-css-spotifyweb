@@ -1,5 +1,5 @@
 :root{
-    --color-1: #090B12;
+    --color-1: rgb(9, 11, 18, 0,7);  /* opacity */
     --color-2: #000000;
     --color-3: #141922;
     --color-4: #282828;
@@ -8,6 +8,7 @@
 
 body {
     background-color: var(--color-3);
+    color: white;
 }
 
 .layout-top{
@@ -17,11 +18,35 @@ body {
 }
 
 .layout__sidebar {
-    flex-grow: 1;
+    flex-basis: 10%;
+    border: 3px solid lightblue;
 }
 
 .layout__main {
     flex-basis: 90%;
+    border: 3px solid lightsalmon;
+    overflow-y: auto;
+}
+
+.layout__cta {
+    border: 3px solid lightskyblue;
+    background-color: var(--color-1);
+    padding: 20px;
+    text-align: right;
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    font-family: 0.6rem;
+}
+
+.btn {
+    border: 1px solid white;
+}
+
+.btn--cta {
+    padding: 8px 16px;
+    border-radius: 20px;
 }
 
 .layout-bottom {

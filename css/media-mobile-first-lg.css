@@ -1,3 +1,5 @@
 @media screen and ( min-width: 1024px ){
-    
+    .layout__cta{
+        font-size: 1.3rem;
+    }
 }
