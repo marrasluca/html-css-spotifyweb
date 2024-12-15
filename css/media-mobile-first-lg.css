@@ -2,4 +2,7 @@
     .layout__cta{
         font-size: 1.3rem;
     }
+    .layout__main--album .card {
+        flex-basis: calc(100% / 6 - 10px);
+    }
 }

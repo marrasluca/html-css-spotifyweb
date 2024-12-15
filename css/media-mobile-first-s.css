@@ -1,7 +1,7 @@
 @media screen and ( min-width: 480px ){
-    .layout__cta {
+    /* .layout__cta {
         font-size: 1rem;
-    }
+    } */
 
     .layout__sidebar--logo img[alt$="small"] {
         display: none;
@@ -11,7 +11,7 @@
     }
 
     .layout__sidebar {
-        min-width: 250px;
+        min-width: 200px;
         flex-shrink: 0;
     }
 

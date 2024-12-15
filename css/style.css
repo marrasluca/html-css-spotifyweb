@@ -26,12 +26,12 @@ body {
 }
 
 .layout__sidebar--top {
-    border: 3px solid lightcyan;
     height: calc(100% - 100px);
+    overflow: auto;
 }
 
 .layout__sidebar--bottom {
-    border: 3px solid lightsalmon;
+    
     height: 100px;
     display: flex;
     flex-direction: column;
@@ -69,12 +69,16 @@ body {
 
 .layout__main {
     flex-basis: 90%;
-    /* border: 3px solid lightsalmon; */
     overflow-y: auto;
+   
+}
+
+.layout__main h2 {
+    margin-block: 10px;
+    padding-inline: 15px;
 }
 
 .layout__cta {
-    border: 3px solid lightskyblue;
     background-color: var(--color-1);
     padding: 20px;
     text-align: right;
@@ -94,8 +98,65 @@ body {
     border-radius: 20px;
 }
 
+.layout__main--text ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.7rem;
+    margin-block: 10px;
+    text-transform: uppercase;
+}
+
+.layout__main--album, 
+.layout__main--personal,
+.layout__main--popular {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-inline: 15px;
+}
+
+.layout__main--album .card,
+.layout__main--personal .card,
+.layout__main--popular .card {
+    flex-basis: calc(100% / 2 - 10px);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.layout__main--popular  img{
+    border-radius: 50%;
+
+}
+
+.layout__main--popular .img {
+    flex-basis: calc(100% / 2 - 10px);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.layout__main--album .card span,
+.layout__sidebar--playlist .card img,
+.layout__main--popular span{
+    color: var(--color-5);
+}
+
+.layout__main--album .card img,
+.layout__main--personal .card img,
+.layout__main--popular .img{
+    width: 100%;
+}
+
 .layout-bottom {
     height: 10vh;
-    border: 3px solid lightpink;
     background-color: var(--color-5);
 }
