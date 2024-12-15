@@ -13,18 +13,50 @@ body {
 
 .layout-top{
     height: 90vh;
-    border: 3px solid lightgreen;
     display: flex;
 }
 
 .layout__sidebar {
-    flex-basis: 10%;
-    border: 3px solid lightblue;
+   
+    background-color: var(--color-2);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: var(--color-5);
+}
+
+.layout__sidebar--top {
+    border: 3px solid lightcyan;
+    height: calc(100% - 100px);
+}
+
+.layout__sidebar--bottom {
+    border: 3px solid lightsalmon;
+    height: 100px;
+}
+
+.layout__sidebar--logo img[alt$="big"] {
+    display: none;
+}
+
+.layout__sidebar--menu ul li a span {
+    display: none;
+}
+
+.layout__sidebar--menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.layout__sidebar--playlist {
+        display: none;
 }
 
 .layout__main {
     flex-basis: 90%;
-    border: 3px solid lightsalmon;
+    /* border: 3px solid lightsalmon; */
     overflow-y: auto;
 }
 
@@ -52,4 +84,5 @@ body {
 .layout-bottom {
     height: 10vh;
     border: 3px solid lightpink;
+    background-color: var(--color-5);
 }
