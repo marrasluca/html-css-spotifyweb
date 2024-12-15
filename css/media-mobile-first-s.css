@@ -31,6 +31,22 @@
         align-items: center;
     }
 
+    .layout__sidebar--bottom {
+        align-items: flex-start;
+        padding: 0 15px;
+    }
+
+    .layout__sidebar--bottom a span {
+        display: inline;
+    }
+
+    .layout__sidebar--bottom a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
     .layout__sidebar--playlist--btn a .square-icon {
         height: 25px;
         width: 25px;

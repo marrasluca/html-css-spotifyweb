@@ -33,6 +33,19 @@ body {
 .layout__sidebar--bottom {
     border: 3px solid lightsalmon;
     height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.layout__sidebar--bottom a span  {
+    display: none;
+}
+
+.layout__sidebar--bottom a span hr {
+    display: none;
 }
 
 .layout__sidebar--logo img[alt$="big"] {
